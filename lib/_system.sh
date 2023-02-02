@@ -36,7 +36,7 @@ system_git_clone() {
   sleep 2
 
   sudo su - deploy <<EOF
-  git clone https://github.com/rtenorioh/Press-Ticket  /home/deploy/${instancia_add}/
+  git clone https://github.com/rtenorioh/Press-Ticket/tree/1.3.2  /home/deploy/${instancia_add}/
 EOF
 
   sleep 2
@@ -47,19 +47,19 @@ EOF
 # Arguments:
 #   None
 #######################################
-system_update() {
-  print_banner
-  printf "${WHITE} 💻 Vamos atualizar o sistema Press Ticket...${GRAY_LIGHT}"
-  printf "\n\n"
+#system_update() {
+#  print_banner
+#  printf "${WHITE} 💻 Vamos atualizar o sistema Press Ticket...${GRAY_LIGHT}"
+#  printf "\n\n"
 
-  sleep 2
+#  sleep 2
 
-  sudo su - root <<EOF
-  apt -y update
-EOF
+#  sudo su - root <<EOF
+#  apt -y update
+#EOF
 
-  sleep 2
-}
+#  sleep 2
+#}
 
 #######################################
 # installs node
