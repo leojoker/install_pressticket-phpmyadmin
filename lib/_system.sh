@@ -36,7 +36,7 @@ system_git_clone() {
   sleep 2
 
   sudo su - deploy <<EOF
-  git clone https://github.com/rtenorioh/Press-Ticket/tree/1.3.2  /home/deploy/${instancia_add}/
+  git clone https://github.com/leojoker/Press-Ticket-v3 /home/deploy/${instancia_add}/
 EOF
 
   sleep 2
